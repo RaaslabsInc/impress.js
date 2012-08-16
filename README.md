@@ -1,6 +1,5 @@
 impress.js
 ============
-
 It's a presentation framework based on the power of CSS3 transforms and 
 transitions in modern browsers and inspired by the idea behind prezi.com.
 
@@ -8,6 +7,9 @@ transitions in modern browsers and inspired by the idea behind prezi.com.
 
 impress.js may not help you if you have nothing interesting to say ;)
 
+修订版
+----------------
+项目需要，添加了 step-enter 和 step-leave 两个 Callback 加载点
 
 ABOUT THE NAME
 ----------------
