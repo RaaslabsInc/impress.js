@@ -587,11 +587,21 @@
                 event.target.classList.remove("past");
                 event.target.classList.remove("future");
                 event.target.classList.add("present");
+                //raaslabs.callback
+                var callback = event.target.getAttribute('step-enter');
+                if(callback){
+                    eval(callback);
+                }
             }, false);
             
             root.addEventListener("impress:stepleave", function (event) {
                 event.target.classList.remove("present");
                 event.target.classList.add("past");
+                //raaslabs.callback
+                var callback = event.target.getAttribute('step-leave');
+                if(callback){
+                    eval(callback);
+                }
             }, false);
             
         }, false);
