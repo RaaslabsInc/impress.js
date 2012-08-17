@@ -588,7 +588,7 @@
                 event.target.classList.remove("future");
                 event.target.classList.add("present");
                 //raaslabs.callback
-                var callback = event.target.getAttribute('step-enter');
+                var callback = event.target.getAttribute('onenter');
                 if(callback){
                     eval(callback);
                 }
@@ -598,7 +598,7 @@
                 event.target.classList.remove("present");
                 event.target.classList.add("past");
                 //raaslabs.callback
-                var callback = event.target.getAttribute('step-leave');
+                var callback = event.target.getAttribute('onleave');
                 if(callback){
                     eval(callback);
                 }
