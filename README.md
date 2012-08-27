@@ -6,17 +6,15 @@ impress.js
 
 使用示例
 ----------------
-直接添加属性 onenter 或 onleave，页面加载时会触发 step-enter 中的脚本，页面跳出前加载 step-leave
+直接添加属性 onenter 或 onleave，页面加载时会触发 onenter 中的脚本，页面跳出前加载 onleave
 
-    <div class="step" onenter="alert('in');" step-leave="alert('out')">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    <div class="step" onenter="alert('in');" onleave="alert('out')">
+        <p>onenter then </p>
     </div>
 
 LICENSE
 ---------
-
 Copyright 2011-2012 Bartek Szopka
-
 Released under the MIT and GPL Licenses.
 
 
